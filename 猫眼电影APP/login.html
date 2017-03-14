@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>login</title>
+		<link rel="stylesheet" href="css/mui.min.css" />
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div class="navbar">
+			<h3>账号密码登录</h3>
+		</div>
+		<div class="mui-content">
+			<form id='login-form' class="mui-input-group">
+				<div class="mui-input-row">
+					<label>账号</label>
+					<input id='account' required="required" type="text" class="mui-input-clear mui-input" placeholder="请输入账号">
+				</div>
+				<div class="mui-input-row">
+					<label>密码</label>
+					<input id='password' type="password" class="mui-input-password" placeholder="请输入密码">
+				</div>
+			</form>
+			<div class="mui-content-padded">
+				<button id='login' class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+			</div>
+			<span class="forget-pwd"><a>忘记密码</a></span>
+			<button class="reg">免费注册</button>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#login").click(function() {
+					var account = "",
+						pwd = "";
+					account = document.getElementById("account").value;
+					pwd = document.getElementById("password").value;
+					if(account == "" || pwd == "") {
+						mui.alert("请输入账号或密码");
+					} else if(account != "admin" || pwd != "123") {
+						mui.alert("账号或密码有误");
+					} else {
+						window.location.href = "user.html";
+					}
+				});
+				$(".reg").click(function(){
+					window.location.href = "reg.html";
+				});
+			});
+		</script>
+	</body>
+</html>

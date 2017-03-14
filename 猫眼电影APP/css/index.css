@@ -1,0 +1,371 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "楷体";
+}
+
+html{
+	font-size: 20px;
+}
+/*轮播宽度大于600px消失*/
+
+@media only screen and (min-width:600px) {
+	.lunbo{
+		display: none;
+	}
+	.movies{
+		margin-top: 50px;
+	}
+} 
+a{
+	text-decoration: none;
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+    color: #df2d2d;
+}
+.mui-bar a{
+	padding-top: 4px;
+}
+.mui-control-content{
+	background: #efeff4 !important;
+}
+
+.icon-dianyingb{
+	font-size: 30px;
+}
+.icon-yingyuanb{
+	font-size: 23px;
+}
+
+.icon-faxian2{
+	font-size: 24px;
+}
+
+.icon-wode{
+	font-size: 23px; 
+	font-weight: bold;
+}
+.nav{
+	width: 100%;
+    height: 50px;
+    top: 0px;
+    table-layout: fixed;
+    position: fixed;
+    background: rgb(223, 45, 45);
+    z-index: 999;
+}
+
+
+
+.nav li{
+	width: 33.3%;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	color: #fff;
+}
+.nav li p{
+	display: block;
+	font-size: 16px;
+	float: left;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.nav li p span{
+	font-size: 16px;
+}
+.mui-icon-search{
+	float: right;
+	line-height: 50px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+
+/*热映列表*/
+.movies{
+	width: 100%;
+    float: left;
+    margin-bottom: 50px;
+}
+
+
+.movies-list li{
+	width: 100%;
+    display: list-item;
+    float: left;
+    cursor: pointer;
+}
+
+.info{
+	float: right;
+    text-align: right;
+    display: block;
+    padding: 10px 10px 0px 0px;
+}
+
+.info em{
+	display: block;
+    color: rgb(255, 154, 0);
+    font-size: 20px;
+    line-height: 24px;
+    white-space: nowrap;
+    font-style: normal;
+}
+
+.btn-trans{
+	font-size: 13px;
+    background-color: transparent;
+    color: rgb(229, 72, 71);
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-top: 20px;
+    padding: 4px 17px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(229, 72, 71);
+    border-image: initial;
+}
+
+
+.item{
+	display: block;
+    padding: 10px 10px 12px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.item img{
+	width: 61px !important;
+    height: 84px;
+    float: left;
+}
+
+.cont{
+	margin: 0px 65px 4px 68px;
+}
+
+.cont h4{
+	font-size: 16px;
+    color: rgb(0, 0, 0);
+    max-height: 45px;
+    line-height: 1.2;
+    font-weight: 400;
+    padding: 4px 0px 7px;
+    overflow: hidden;
+}
+.movie-tag{
+	display: inline-block;
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    vertical-align: top;
+    height: 14px;
+    padding: 0px 4px 2px;
+    background: rgb(40, 149, 219);
+    border-radius: 3px;
+    margin: 2px 0px 0px 4px;
+}
+
+.cont p{
+	color: rgb(102, 102, 102);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size:12px ;
+}
+
+.status{
+	font-size: 12px;
+    padding: 3px 0px;
+}
+
+.mui-control-content {
+	background-color: white;
+}
+
+.slider-tab{
+	width: 100%;
+	background: #fff;
+	position: fixed;
+	z-index: 999;
+	height: 50px;
+}
+.slider-tab-size {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*待映列表*/
+.movies1{
+	width: 100%;
+    float: left;
+    margin-top: 50px;
+}
+.btn-trans1{
+	font-size: 13px;
+    background-color: transparent;
+    color: blue;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-top: 20px;
+    padding: 4px 17px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blue;
+    border-image: initial;
+}
+.btn-trans1 span,.btn-trans2 span{
+	font-size: 13px;
+}
+.btn-trans2{
+	font-size: 13px;
+    background-color: transparent;
+    color: blueviolet;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    margin-top: 20px;
+    padding: 4px 17px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: blueviolet;
+    border-image: initial;
+}
+
+/*找片*/
+.findMovie{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	padding-top: 10px;
+	margin-top: 50px;
+	border-top: 1px solid #ccc;
+}
+.movieSelect{
+	width: 100%;
+	overflow: hidden;
+	overflow-x: auto;
+	margin-bottom: 10px;
+	
+}
+
+.movieSelect ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.movieSelect ul li{
+	padding: 2px 10px;
+	margin-right: 10px;
+	border: 1px solid #ccc;
+	border-radius:15px ;
+	white-space: nowrap;
+}
+.movieSelect ul li:first-child{
+	border: none;
+}
+.findMovie ::-webkit-scrollbar{
+    height: 5px;
+    background-color: #fff;
+} 
+.topMovie{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #fff;
+	margin-top: 10px;
+}
+
+.topMovie li{
+	width: 50%;
+	height: 100%;
+	float: left;
+	border-bottom: 1px solid #EFEFF4;
+}
+.topMovieSolid{
+	border-right: 1px solid #EFEFF4;
+}
+
+.topMovie a{
+	display: block;
+    padding: 20px 10px 0 12px;
+}
+
+.topMovie a img{
+	width: 3rem !important;
+	height: 4.2rem;
+	max-width: 140px;
+	max-height: 166px;
+	float: right;
+	bottom: 0;
+}
+
+.topMovieMessage{
+	text-align: center;
+	overflow: hidden;
+}
+
+.topMovieMessage h4{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.topMovieMessage p{
+	font-size: 12px;
+}
+
+.movieAward{
+	width: 100%;
+	background: #fff;
+	margin-top: 20px;
+}
+
+.movieAwardTitle{
+	height: 50px;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 50px;
+}
+.movieAwardList{
+	width: 100%;
+	overflow: hidden;
+	overflow-x: auto;
+}
+
+.movieAwardList ul{
+	display: flex;
+}
+.movieAwardList li{
+	text-align: center;
+	width: 80px;
+	height: 100%;
+	margin-left: 10px;
+	white-space: nowrap;	
+}
+.movieAwardList li p{
+	color:rgb(102, 102, 102);
+	font-size: 12px;
+}
+
+.movieAwardList li h4{
+	font-size: 14px;
+	text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.movieAwardList li img{
+	width: 80px !important;
+}
+
+.movieAward ::-webkit-scrollbar {
+	background-color: #fff;
+}

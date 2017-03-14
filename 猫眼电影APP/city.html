@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>city</title>
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/city.css" />
+		<script src="js/mui.min.js"></script>
+	</head>
+
+	<body>
+		<div class="navbar">
+			<div id="back" class="nav-wrap-left">
+				<span class="mui-icon mui-icon-back"></span>
+			</div>
+			<h2 class="page-title">切换城市</h2>
+		</div>
+		<div class="search">
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label><span class="mui-icon mui-icon-search"></span></label>
+					<input type="text" class="mui-input-clear" placeholder="输入城市中文名">
+				</div>
+			</form>
+		</div>
+		<div class="city">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-collapse city-title">
+					<a class="mui-navigate-right" href="#">热门城市</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">上海</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">北京</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">广州</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">深圳</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-collapse city-title">
+					<a class="mui-navigate-right" href="#">A</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">安宁</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">安阳</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">安平</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-collapse city-title">
+					<a class="mui-navigate-right" href="#">B</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">北京</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">博兴</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">保定</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-collapse city-title">
+					<a class="mui-navigate-right" href="#">C</a>
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">长春</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">长沙</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">长兴</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">常州</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">朝阳</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="#">潮州</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#back").on("click",function(){
+					window.history.back(-1);
+				});
+			});
+		</script>
+	</body>
+
+</html>

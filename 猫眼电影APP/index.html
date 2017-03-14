@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>index</title>
+		<link rel="stylesheet" href="css/sm.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css" />
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css">
+	</head>
+
+	<body>
+		<!--<div class="page page-current" id='router'>-->
+			<div class="content">
+				<div class="content-block">
+					<div id="miu-slider" class="mui-slider">
+						<div class="slider-tab">
+							<div class="slider-tab-size">
+								<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+									<a class="mui-control-item" href="#item1mobile">
+										热映
+									</a>
+									<a class="mui-control-item" href="#item2mobile">
+										待映
+									</a>
+									<a class="mui-control-item" href="#item3mobile">
+										找片
+									</a>
+								</div>
+								<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+							</div>
+						</div>
+						<div class="mui-slider-group">
+							<div id="item1mobile" class="mui-slider-item mui-control-content">
+								<!--轮播-->
+								<div id="slider" class="mui-slider lunbo">
+									<div class="mui-slider-group mui-slider-loop">
+										<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+										<div class="mui-slider-item mui-slider-item-duplicate">
+											<a href="#">
+												<img src="img/lunbo4.jpg">
+											</a>
+										</div>
+										<!-- 第一张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="img/lunbo1.jpg">
+											</a>
+										</div>
+										<!-- 第二张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="img/lunbo2.jpg">
+											</a>
+										</div>
+										<!-- 第三张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="img/lunbo3.jpg">
+											</a>
+										</div>
+										<!-- 第四张 -->
+										<div class="mui-slider-item">
+											<a href="#">
+												<img src="img/lunbo4.jpg">
+											</a>
+										</div>
+										<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+										<div class="mui-slider-item mui-slider-item-duplicate">
+											<a href="#">
+												<img src="img/lunbo1.jpg">
+											</a>
+										</div>
+									</div>
+									<div class="mui-slider-indicator">
+										<div class="mui-indicator mui-active"></div>
+										<div class="mui-indicator"></div>
+										<div class="mui-indicator"></div>
+										<div class="mui-indicator"></div>
+									</div>
+								</div>
+								<!--热映列表-->
+								<div class="movies">
+									<ul class="movies-list">
+										<!--<li>
+											<span class="info">
+												<em>8.2分</em>
+												<a class="btn-trans"  href="theater.html">购票</a>
+											</span>
+											<a class="item" href="movieMessage.html">
+												<img src="img/1.webp">
+												<div class="cont">
+													<h4>
+														<span>星球大战外传：侠盗一号</span>
+														<span class="movie-tag">3D</span>
+													</h4>
+													<p class="desc">姜文和子丹，去打太空战</p>
+													<p class="status">今天169家影院放映2598场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<em>8.7分</em>
+												<a class="btn-trans"  href="theater.html">购票</a>
+											</span>
+											<a class="item"  href="movieMessage.html">
+												<img src="img/2.webp">
+												<div class="cont">
+													<h4>
+														<span>情圣</span>
+													</h4>
+													<p class="desc">哇哈哈哈哈，爆笑把年跨</p>
+													<p class="status">今天161家影院放映1113场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<em>8.2分</em>
+												<a class="btn-trans"  href="theater.html">购票</a>
+											</span>
+											<a class="item"  href="movieMessage.html">
+												<img src="img/1.webp">
+												<div class="cont">
+													<h4>
+														<span>星球大战外传：侠盗一号</span>
+														<span class="movie-tag">3D</span>
+													</h4>
+													<p class="desc">姜文和子丹，去打太空战</p>
+													<p class="status">今天169家影院放映2598场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<em>8.7分</em>
+												<a class="btn-trans">购票</a>
+											</span>
+											<a class="item">
+												<img src="img/2.webp">
+												<div class="cont">
+													<h4>
+														<span>情圣</span>
+													</h4>
+													<p class="desc">哇哈哈哈哈，爆笑把年跨</p>
+													<p class="status">今天161家影院放映1113场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<em>8.2分</em>
+												<a class="btn-trans">购票</a>
+											</span>
+											<a class="item">
+												<img src="img/1.webp">
+												<div class="cont">
+													<h4>
+														<span>星球大战外传：侠盗一号</span>
+														<span class="movie-tag">3D</span>
+													</h4>
+													<p class="desc">姜文和子丹，去打太空战</p>
+													<p class="status">今天169家影院放映2598场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<em>8.7分</em>
+												<a class="btn-trans">购票</a>
+											</span>
+											<a class="item">
+												<img src="img/2.webp">
+												<div class="cont">
+													<h4>
+														<span>情圣</span>
+													</h4>
+													<p class="desc">哇哈哈哈哈，爆笑把年跨</p>
+													<p class="status">今天161家影院放映1113场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<em>8.2分</em>
+												<a class="btn-trans">购票</a>
+											</span>
+											<a class="item">
+												<img src="img/1.webp">
+												<div class="cont">
+													<h4>
+														<span>星球大战外传：侠盗一号</span>
+														<span class="movie-tag">3D</span>
+													</h4>
+													<p class="desc">姜文和子丹，去打太空战</p>
+													<p class="status">今天169家影院放映2598场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<em>8.7分</em>
+												<a class="btn-trans">购票</a>
+											</span>
+											<a class="item">
+												<img src="img/2.webp">
+												<div class="cont">
+													<h4>
+														<span>情圣</span>
+													</h4>
+													<p class="desc">哇哈哈哈哈，爆笑把年跨</p>
+													<p class="status">今天161家影院放映1113场</p>
+												</div>
+											</a>
+										</li>-->
+									</ul>
+								</div>
+							</div>
+							<div id="item2mobile" class="mui-slider-item mui-control-content">
+								<!--待映列表-->
+								<div class="movies1">
+									<ul class="movies-list">
+										<li>
+											<span class="info">	
+												<a class="btn-trans2">预售</a>
+											</span>
+											<a class="item">
+												<img src="img/1.webp">
+												<div class="cont">
+													<h4>
+														<span>星球大战外传：侠盗一号</span>
+														<span class="movie-tag">3D</span>
+													</h4>
+													<p class="desc">姜文和子丹，去打太空战</p>
+													<p class="status">今天169家影院放映2598场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">
+												<a class="btn-trans2">预售</a>
+											</span>
+											<a class="item">
+												<img src="img/2.webp">
+												<div class="cont">
+													<h4>
+														<span>情圣</span>
+													</h4>
+													<p class="desc">哇哈哈哈哈，爆笑把年跨</p>
+													<p class="status">今天161家影院放映1113场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">	
+												<a class="btn-trans2">预售</a>
+											</span>
+											<a class="item">
+												<img src="img/1.webp">
+												<div class="cont">
+													<h4>
+														<span>星球大战外传：侠盗一号</span>
+														<span class="movie-tag">3D</span>
+													</h4>
+													<p class="desc">姜文和子丹，去打太空战</p>
+													<p class="status">今天169家影院放映2598场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">	
+												<a class="btn-trans2">预售</a>
+											</span>
+											<a class="item">
+												<img src="img/2.webp">
+												<div class="cont">
+													<h4>
+														<span>情圣</span>
+													</h4>
+													<p class="desc">哇哈哈哈哈，爆笑把年跨</p>
+													<p class="status">今天161家影院放映1113场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">	
+												<a class="btn-trans2">预售</a>
+											</span>
+											<a class="item">
+												<img src="img/1.webp">
+												<div class="cont">
+													<h4>
+														<span>星球大战外传：侠盗一号</span>
+														<span class="movie-tag">3D</span>
+													</h4>
+													<p class="desc">姜文和子丹，去打太空战</p>
+													<p class="status">今天169家影院放映2598场</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<span class="info">	
+												<a class="btn-trans2">预售</a>
+											</span>
+											<a class="item">
+												<img src="img/2.webp">
+												<div class="cont">
+													<h4>
+														<span>情圣</span>
+													</h4>
+													<p class="desc">哇哈哈哈哈，爆笑把年跨</p>
+													<p class="status">今天161家影院放映1113场</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+							<div id="item3mobile" class="mui-slider-item mui-control-content">
+								<!--找片-->
+								<div class="findMovie">
+									<div class="movieSelect">
+										<ul>
+											<li>类型</li>
+											<li>爱情</li>
+											<li>喜剧</li>
+											<li>动画</li>
+											<li>剧情</li>
+											<li>恐怖</li>
+											<li>惊悚</li>
+											<li>科幻</li>
+											<li>动作</li>
+											<li>悬疑</li>
+											<li>犯罪</li>
+											<li>冒险</li>
+											<li>战争</li>
+											<li>奇幻</li>
+											<li>运动</li>
+											<li>家庭</li>
+											<li>古装</li>
+											<li>武侠</li>
+											<li>西部</li>
+											<li>历史</li>
+											<li>传记</li>
+											<li>歌舞</li>
+											<li>短片</li>
+											<li>纪录片</li>
+											<li>其他</li>
+										</ul>
+									</div>
+									<div class="movieSelect">			
+										<ul>
+											<li>地区</li>
+											<li>大陆</li>
+											<li>美国</li>
+											<li>韩国</li>
+											<li>日本</li>
+											<li>中国香港</li>
+											<li>中国台湾</li>
+											<li>泰国</li>
+											<li>印度</li>
+											<li>法国</li>
+											<li>英国</li>
+											<li>俄罗斯</li>
+											<li>意大利</li>	
+											<li>西班牙</li>
+											<li>德国</li>
+											<li>波兰</li>
+											<li>澳大利亚</li>
+											<li>伊朗</li>
+											<li>其他</li>
+											</ul>
+									</div>
+									<div class="movieSelect">
+										<ul>
+											<li>年代</li>
+											<li>2017以后</li>
+											<li>2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2000-2010</li>
+											<li>90年代</li>
+											<li>80年代</li>
+											<li>70年代</li>
+											<li>更早</li>
+										</ul>
+									</div>
+								</div>
+								<!--排名-->
+								<div class="topMovie">
+									<ul>
+										<li class="topMovieSolid">
+											<a>
+												<img src="img/bd1.jpg">
+												<div class="topMovieMessage">
+													<h4 style="color: blue;">热映口碑</h4>
+													<p>欢乐好声音</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a>
+												<img src="img/bd2.jpg">
+												<div class="topMovieMessage">
+													<h4 style="color: red;">最受期待</h4>
+													<p>金刚狼3：殊死一战</p>
+												</div>
+											</a>
+										</li>
+										<li class="topMovieSolid">
+											<a>
+												<img src="img/bd3.png">
+												<div class="topMovieMessage">
+													<h4 style="color: green;">海外电影</h4>
+													<p>逃出绝命镇</p>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a>
+												<img src="img/bd4.jpg">
+												<div class="topMovieMessage">
+													<h4 style="color: yellow;">TOP100</h4>
+													<p>霸王别姬</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<!--电影奖项-->
+								<div class="movieAward">
+									<div class="movieAwardTitle">全球电影奖项</div>
+									<div class="movieAwardList">
+										<ul>
+											<li>
+												<h4>香港金像奖</h4>
+												<p>04-09</p>
+												<img src="img/ma1.jpg"/>
+											</li>
+											<li>
+												<h4>日本电影学院奖</h4>
+												<p>03-02</p>
+												<img src="img/ma2.jpg"/>
+											</li>
+											<li>
+												<h4>奥斯卡金像奖</h4>
+												<p>02-26</p>
+												<img src="img/ma3.jpg"/>
+											</li>
+											<li>
+												<h4>英国电影和电视艺术学院奖</h4>
+												<p>02-12</p>
+												<img src="img/ma3.jpg"/>
+											</li>
+											<li>
+												<h4>柏林国际电影节</h4>
+												<p>02-09</p>
+												<img src="img/ma4.jpg"/>
+											</li>
+											<li>
+												<h4>安妮奖</h4>
+												<p>02-04</p>
+												<img src="img/ma5.jpg"/>
+											</li>
+											<li>
+												<h4>圣丹斯电影节</h4>
+												<p>01-19</p>
+												<img src="img/ma6.jpg"/>
+											</li>
+											<li>
+												<h4>金球奖</h4>
+												<p>01-08</p>
+												<img src="img/ma7.jpg"/>
+											</li>
+											<li>
+												<h4>欧洲电影奖</h4>
+												<p>2016-12-10</p>
+												<img src="img/ma8.jpg"/>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--顶部-->
+				<nav class="nav">
+					<ul>
+						<li>
+							<p id="city">珠海<span class="mui-icon mui-icon-arrowdown"></span></p>
+						</li>
+						<li>电影</li>
+						<li><span id="search" class="mui-icon mui-icon-search"></span></li>
+					</ul>
+				</nav>
+				<!--底部选项卡-->
+				<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active" href="index.html">
+						<i class="icon iconfont icon-dianyingb"></i>
+						<div class="icon-name">电影</div>
+					</a>
+					<a class="mui-tab-item mui-active" href="theater.html">
+						<i class="icon iconfont icon-yingyuanb"></i>
+						<div class="icon-name">影院</div>
+					</a>
+					<!--<a class="mui-tab-item mui-active" href="find.html">
+						<i class="icon iconfont icon-faxian2"></i>
+						<div class="icon-name">发现</div>
+					</a>-->
+					<a class="mui-tab-item mui-active" href="user.html">
+						<i class="icon iconfont icon-wode"></i>
+						<div class="icon-name">我的</div>
+					</a>
+				</nav>
+			</div>
+		<!--</div>-->
+		<link rel="stylesheet" type="text/css" href="js/artDialog6/ui-dialog.css" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/WebP.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/rem.js"></script>
+		<script src="js/artDialog6/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//图片轮播
+			var slider = mui("#slider");
+
+			function lunbo() {
+				slider.slider({
+					interval: 3000
+				});
+			}
+			lunbo();
+
+			//城市切换
+			$(function() {
+				$("#city").on("click", function() {
+					window.location.href = "city.html";
+				});
+			});
+			//搜索切换
+			$(function() {
+				$("#search").on("click", function() {
+					window.location.href = "search.html";
+				});
+			});
+			var app = {				
+				loadAll: function() {
+					$.ajax({
+						type: "get",				
+						url: "http://localhost:8080/Movies/findMovie",
+						dataType:"json",
+						jsonpCallback:"data",
+						beforeSend:function(){
+							this.box=dialog({
+								modal: false
+							});
+							this.box.show();
+						},
+						success: function(data) {
+							$.each(data, function(index, obj) {
+								$(".movies-list").append("<li>"+
+									"<span class='info'>"+
+										"<em>"+obj.grade+"分"+"</em>"+
+										"<a  class='btn-trans'  href='theater.html'>"+
+											"购票"+
+										"</a>"+
+									"</span>"+
+									"<a class='item' href='movieMessage.html'>"+
+										"<img src="+obj.img+">"+
+										"<div  class='cont'>"+
+											"<h4>"+
+												"<span>"+obj.movieName+"</span>"+
+												"<span class='movie-tag'>"+obj.label+"</span>"+
+											"</h4>"+
+											"<p class='desc'>"+"导演："+obj.director+"</p>"+
+											"<p class='status'>"+"演员："+obj.actor+"</p>"+
+										"</div>"+
+									"</a>"+
+								"</li>"
+								)
+							});
+
+						},
+						complete:function(){
+							this.box.remove();
+						},
+						error:function(data){
+							app.log("错误");
+						}
+					});
+				},
+				init: function() {
+					this.loadAll();
+				},
+			};
+			
+			app.init();
+		</script>
+	</body>
+
+</html>

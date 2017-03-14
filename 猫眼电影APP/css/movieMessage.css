@@ -1,0 +1,412 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: "楷体";
+}
+
+html{
+	font-size: 20px;
+}
+/*@media only screen and (min-width:500px) {
+	body{
+		background: #333;
+	}
+	#router{
+		margin: auto;
+		width: 18%;
+		min-width: 500px;
+	}
+	.nav{
+		margin: auto;
+		width: 18% !important;
+		min-width: 500px !important;
+	}
+	.buy{
+		margin: auto;
+		width: 18% !important;
+		min-width: 500px !important;
+	}
+} */
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: red;
+}
+
+.icon-fenxiang {
+	font-size: 18px;
+}
+
+.nav {
+	width: 100%;
+	height: 50px;
+	top: 0px;
+	table-layout: fixed;
+	position: fixed;
+	background: rgb(223, 45, 45);
+	z-index: 999;
+}
+
+.nav li {
+	width: 50%;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	font-size: 20px;
+	color: #fff;
+}
+
+.nav li span {
+	cursor: pointer;
+}
+
+.nav li .mui-icon-back {
+	float: left;
+	margin-left: 8px;
+	line-height: 50px;
+}
+
+.nav li .icon-fenxiang {
+	float: right;
+	margin-right: 8px;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.mainMessage {
+	width: 100%;
+	height: 100%;
+	background-color: #40454d;
+	margin-top: 50px;
+	overflow: hidden;
+	padding-bottom: 20px;
+}
+
+.mainMessage .mainMessageFrame {
+	width: 100%;
+	height: 100%;
+	margin-top: 17.5px;
+	float: left;
+	overflow: hidden;
+}
+
+.mainMessage .img {
+	width: 5.5rem;
+	height: 7.75rem;
+	min-width: 110px;
+	min-height: 155px;
+	max-width: 190px;
+	max-height: 270px;
+	border: 1px solid #c1c1c1;
+	margin-left: 15px;
+	float: left;
+	position: relative;
+	margin-right: 15px;
+}
+
+.mainMessage .img img {
+	width: 100%;
+	height: 100%;
+}
+
+/*.mainMessage .img .play {
+	min-width: 35px;
+	min-height: 35px;
+	width: 1.75rem;
+	height: 1.75rem;
+	position: absolute;
+	top: 3rem;
+	left: 1.875rem;
+	border: 1.5px solid #fff;
+	border-radius: 1.75rem;
+	cursor: pointer;
+	background: rgb(51, 51, 51)
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-left: 14px solid #fff;
+	border-bottom: 8px solid transparent;
+	margin-top: 9px;
+	margin-left: 11px;
+}*/
+
+.mainMessage .message {
+	height: 155px;
+	color: #fff;
+}
+
+.mainMessage .message p {
+	font-size: 12px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.mainMessage .message .grade {
+	font-size: 16px;
+	color: rgb(255, 154, 0);
+}
+
+.mainMessage .message p .movie-tag {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.4);
+	padding: 0px 4px 2px;
+	height: 18px;
+	border-radius: 3px;
+	margin: 2px 0px 0px 4px;
+}
+
+.mainMessage .messageBut {
+	width: 100%;	
+	float: left;
+	margin-top: 17.5px;
+	font-size: 16px;
+}
+
+.mainMessage .messageBut li {
+	float: left;
+	width: 50%;
+	
+}
+
+.mainMessage .messageBut li div {
+	width: 87%;
+	height: 35px;
+	color: #fff;
+	background: #bbb;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 35px;
+	cursor: pointer;
+}
+
+.want {
+	margin-left: 15px;
+}
+
+.score {
+	float: right;
+	margin-right: 15px;
+}
+
+.movieText {
+	padding: 10px 10px 10px 10px;
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	background: #fff;
+	font-size: 15px;
+	cursor: pointer;
+	position: relative;
+}
+
+.movieTextBut {
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	color: #ccc;
+}
+
+.movieText ul {
+	margin: 0px 10px 5px 10px;
+}
+
+.movieText li {
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 14px;
+	color: #333;
+}
+
+.movieText li:first-child {
+	margin-top: 0px;
+}
+
+.movieText li:last-child {
+	max-height: 148px;
+	text-overflow: ellipsis;
+	white-space: normal;
+	overflow: hidden;
+}
+
+.movieText li span {
+	font-size: 16px;
+	color: #000;
+}
+
+.moviePhoto {
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	margin-top: 20px;
+}
+
+.moviePhotoTitle {
+	height: 30px;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.moviePhotos {
+	width: 100%;
+	height: 120px;
+}
+
+.moviePhoto .swiper-container{
+	width: 100%;
+	height: 106px;
+	cursor: pointer;
+}
+
+
+
+.moviePhoto .swiper-slide {
+	text-align: center;
+}
+.moviePhoto .swiper-slide:first-child{
+	margin-left: 12px;
+}
+.moviePhoto .swiper-slide:nth-child(n+1) {
+	width: 110px;
+}
+.movieActor {
+	width: 100%;
+	height: 170px;
+	margin-top: 20px;
+	background: #fff;
+}
+
+.movieActorTitle {
+	height: 30px;
+	margin-left: 10px;
+	font-size: 16px;
+	line-height: 30px;
+}
+.movieActor .swiper-container {
+	width: 100%;
+	height: 140px;
+	cursor: pointer;
+}
+
+.movieActor .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+}
+
+.movieActor .swiper-slide:nth-child(n+1) {
+	width: 80px;
+}
+
+.movieActor .swiper-slide a{
+	display: block;
+}
+
+.movieActor .swiper-slide .actorName{
+	display:block;
+	font-size: 13px;
+}
+
+.movieActor .swiper-slide .actorOtherName{
+	display:block;
+	font-size: 13px;
+	color: #7C7C7C;
+}
+
+.movieActor .swiper-slide img{
+	width: 70px;
+	height: 90px;
+}
+
+.movieComment {
+	width: 100%;
+	background: #fff;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.movieCommentTitle {
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 2px solid #EFEFF4;
+}
+
+.movieCommentTitle p {
+	margin-left: 10px;
+}
+
+.movieCommentText {
+	width: 100%;
+}
+
+.movieCommentText li {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #EFEFF4;
+	white-space: normal;
+	overflow: hidden;
+	cursor: pointer;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.movieCommentText li p {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 100%;
+	font-size: 14px;
+}
+
+.movieCommentText li p:first-child {
+	margin-top: 5px;
+}
+
+.movieCommentText li span {
+	font-size: 14px;
+}
+
+.movieCommentText .userName {
+	float: left;
+	font-family: "微软雅黑";
+}
+
+.movieCommentText .userGrade {
+	margin-left: 5px;
+	color: rgb(255, 154, 0);
+	float: left;
+}
+
+.movieCommentText .userDay {
+	float: right;
+}
+
+.buy {
+	width: 100%;
+	height: 50px;
+	bottom: 0px;
+	table-layout: fixed;
+	position: fixed;
+	background: rgb(223, 45, 45);
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 999;
+}

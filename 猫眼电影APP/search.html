@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>search</title>
+		<link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/search.css"/>
+		<link rel="stylesheet" type="text/css" href="css/icons-extra.css"/>
+		<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+	<body>
+		<div class="search">
+			<form class="mui-input-group">
+				<div class="mui-input-row">
+					<label><span class="mui-icon mui-icon-search"></span></label>
+					<input type="text" class="mui-input-clear" placeholder="找影视剧、影人、影院">
+				</div>
+			</form>
+			<span id="back" class="search-close">取消</span>
+		</div>
+		<div class="hot-search">
+			<div class="hot-search-title">热门搜索</div>
+			<div class="hot-search-list">
+				<ul>
+					<li>悟空传</li>
+					<li>摔跤吧！爸爸</li>
+					<li>驴得水</li>
+					<li>超级快递</li>
+					<li>星球大战：原力觉醒</li>
+					<li>美国队长3</li>
+					<li>悟空传</li>
+					<li>摔跤吧！爸爸</li>
+					<li>驴得水</li>
+					<li>超级快递</li>
+					<li>星球大战：原力觉醒</li>
+					<li>美国队长3</li>
+				</ul>
+			</div>
+		</div>
+		<div class="type">
+			<ul>
+				<li><p><i class="icon iconfont icon-dianyingb"></i></p><span>分类找片</span></li>
+				<li><p><i class="icon iconfont icon-pengyou"></i></p><span>影人</span></li>
+				<li><p><i class="icon iconfont icon-yingyuanb"></i></p><span>影院</span></li>
+				<li><p><i class="icon iconfont icon-zixun1"></i></p><span>资讯</span></li>
+			</ul>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#back").on("click",function(){
+					window.history.back(-1);
+				});
+			});
+		</script>
+	</body>
+</html>

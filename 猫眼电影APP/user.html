@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>user</title>
+		<link rel="stylesheet" href="css/sm.css" />
+		<link rel="stylesheet" href="css/mui.min.css">
+		<link rel="stylesheet" href="css/icons-extra.css" />
+		<link rel="stylesheet" type="text/css" href="css/user.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<script src="js/zepto.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<div class="page-group">
+			<div class="page page-current" id='router'>
+				<div class="content">
+					<div class="content-block">
+						<!--1-->
+
+						<div class="login-all">
+							<div id="login" class="login">
+								<div class="login-img"></div>
+								<p>立即登陆</p>
+								<span class="mui-icon mui-icon-arrowright"></span>
+							</div>
+							<a href="#userMessage">
+								<div class="login-message">
+									<div class="img"></div>
+									<p>鲸与海</p>
+									<span class="mui-icon mui-icon-arrowright"></span>
+								</div>
+							</a>
+						</div>
+
+						<!--2-->
+						<div class="operation">
+							<ul>
+								<a href="#operation1">
+									<li>
+										<span class="mui-icon-extra mui-icon-extra-heart-filled"></span><em>想看</em>
+									</li>
+								</a>
+								<a href="#operation2">
+									<li>
+										<span class="mui-icon mui-icon-eye"></span><em>看过</em>
+									</li>
+								</a>
+								<a href="#operation3">
+									<li>
+										<span class="mui-icon-extra mui-icon-extra-comment"></span><em>影评</em>
+									</li>
+								</a>
+								<a href="#operation4">
+									<li>
+										<span class="mui-icon mui-icon-starhalf"></span><em>话题</em>
+									</li>
+								</a>
+							</ul>
+						</div>
+						<!--3-->
+						<div class="myitem">
+							<a href="#myitemAll">
+								<div class="myitem-title">
+									<p>我的订单</p>
+									<span class="mui-icon mui-icon-forward"></span>
+									<span>全部</span>
+								</div>
+							</a>
+							<div class="myitem-list">
+								<ul>
+									<a href="#myitem1">
+										<li>
+											<i class="icon iconfont icon-daifukuan"></i><em>未消费</em>
+										</li>
+									</a>
+									<a href="#myitem2">
+										<li>
+											<i class="icon iconfont icon-tuikuan"></i><em>待付款</em>
+										</li>
+									</a>
+									<a href="#myitem3">
+										<li>
+											<i class="icon iconfont icon-daipingjia"></i><em>待评价</em>
+										</li>
+									</a>
+									<a href="#myitem4">
+										<li>
+											<i class="icon iconfont icon-tuikuan1"></i><em>退款</em>
+										</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+						<!--4-->
+						<div class="list">
+							<ul>
+								<a href="#list-new">
+									<li>
+										<p>我的消息</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+								<a href="#list-collection">
+									<li>
+										<p>我的收藏</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+								<a href="#list-member">
+									<li>
+										<p>会员中心</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+								<a href="#list-achievement">
+									<li>
+										<p>我的成就</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+							</ul>
+						</div>
+						<!--5-->
+						<div class="list">
+							<ul>
+								<a href="#list-wallet">
+									<li>
+										<p>我的钱包</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+								<a href="#list-balance">
+									<li>
+										<p>余额</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+								<a href="#list-coupon">
+									<li>
+										<p>优惠券</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+								<a href="#list-membershipCard">
+									<li>
+										<p>影院会员卡</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+								<a href="#list-shop">
+									<li>
+										<p>商城</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+							</ul>
+						</div>
+						<!--6-->
+						<div class="list">
+							<ul>
+								<a href="#list-setUp">
+									<li>
+										<p>设置</p><span class="mui-icon mui-icon-forward"></span>
+									</li>
+								</a>
+							</ul>
+						</div>
+						<div class="bottom"></div>
+					</div>
+					<nav class="mui-bar mui-bar-tab">
+						<a class="mui-tab-item mui-active" href="index.html">
+							<i class="icon iconfont icon-dianyingb"></i>
+							<div class="icon-name">电影</div>
+						</a>
+						<a class="mui-tab-item mui-active" href="theater.html">
+							<i class="icon iconfont icon-yingyuanb"></i>
+							<div class="icon-name">影院</div>
+						</a>
+						<!--<a class="mui-tab-item mui-active" href="find.html">
+							<i class="icon iconfont icon-faxian2"></i>
+							<div class="icon-name">发现</div>
+						</a>-->
+						<a class="mui-tab-item mui-active" href="user.html">
+							<i class="icon iconfont icon-wode"></i>
+							<div class="icon-name">我的</div>
+							</li>
+						</a>
+					</nav>
+				</div>
+			</div>
+			<!--我的资料-->
+			<div class="page" id='userMessage'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>我的资料</h1>
+					<span class="icon update">修改</span>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						<div class="userList">
+							<ul>
+								<li class="touxiang"><span class="text-name">头像</span><span class="touxiang-img"><img src="img/logo.jpg"></span></li>
+								<li><span class="text-name">昵称</span><span>鲸与海</span></li>
+								<li><span class="text-name">性别</span><span>男</span></li>
+								<li><span class="text-name">生日</span><span>1月11日</span></li>
+								<li><span class="text-name">所在城市</span><span>珠海</span></li>
+							</ul>
+							<ul>
+								<li><span class="text-name">生活状态</span><span>未填写</span></li>
+								<li><span class="text-name">从事行业</span><span>IT</span></li>
+								<li><span class="text-name">兴趣爱好</span><span>旅行</span></li>
+								<li><span class="text-name">个性签名</span><span>未填写</span></li>
+								<li><span class="text-name">收货地址</span><span>未填写</span></li>
+							</ul>
+						</div>
+						<div class="bottom"></div>
+					</div>
+				</div>
+			</div>
+			<!--想看-->
+			<div class="page" id='operation1'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>想看</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						想看
+					</div>
+				</div>
+			</div>
+			<!--看过-->
+			<div class="page" id='operation2'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>看过</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						看过
+					</div>
+				</div>
+			</div>
+			<!--影评-->
+			<div class="page" id='operation3'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>影评</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						影评
+					</div>
+				</div>
+			</div>
+			<!--话题-->
+			<div class="page" id='operation4'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>话题</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						话题
+					</div>
+				</div>
+			</div>
+			<!--我的订单-->
+			<div class="page" id='myitemAll'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>我的订单</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						我的订单
+					</div>
+				</div>
+			</div>
+			<!--未消费-->
+			<div class="page" id='myitem1'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>未消费</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						未消费
+					</div>
+				</div>
+			</div>
+			<!--待付款-->
+			<div class="page" id='myitem2'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>待付款</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						待付款
+					</div>
+				</div>
+			</div>
+			<!--待评价-->
+			<div class="page" id='myitem3'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>待评价</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						待评价
+					</div>
+				</div>
+			</div>
+			<!--退款-->
+			<div class="page" id='myitem4'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>退款</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						退款
+					</div>
+				</div>
+			</div>
+			<!--我的消息-->
+			<div class="page" id='list-new'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>我的消息</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						我的消息
+					</div>
+				</div>
+			</div>
+			<!--我的收藏-->
+			<div class="page" id='list-collection'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>我的收藏</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						我的收藏
+					</div>
+				</div>
+			</div>
+			<!--会员中心-->
+			<div class="page" id='list-member'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>会员中心</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						会员中心
+					</div>
+				</div>
+			</div>
+			<!--我的成就-->
+			<div class="page" id='list-achievement'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>我的成就</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						我的成就
+					</div>
+				</div>
+			</div>
+			<!--我的钱包-->
+			<div class="page" id='list-wallet'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>我的钱包</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						我的钱包
+					</div>
+				</div>
+			</div>
+			<!--余额-->
+			<div class="page" id='list-balance'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>余额</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						余额
+					</div>
+				</div>
+			</div>
+			<!--优惠券-->
+			<div class="page" id='list-coupon'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>优惠券</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						优惠券
+					</div>
+				</div>
+			</div>
+			<!--影院会员卡-->
+			<div class="page" id='list-membershipCard'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>影院会员卡</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						影院会员卡
+					</div>
+				</div>
+			</div>
+			<!--商城-->
+			<div class="page" id='list-shop'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>商城</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						商城
+					</div>
+				</div>
+			</div>
+			<!--设置-->
+			<div class="page" id='list-setUp'>
+				<header class="bar bar-nav">
+					<a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+						<span class="icon icon-left"></span> 返回
+					</a>
+					<h1 class='title'>设置</h1>
+				</header>
+				<div class="content">
+					<div class="content-block">
+						设置
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.min.js"></script>
+		<script src="js/sm.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+			//登陆切换
+			$(function() {
+				$("#login").on("click", function() {
+					window.location.href = "login.html";
+				});
+			});
+		</script>
+	</body>
+
+</html>
